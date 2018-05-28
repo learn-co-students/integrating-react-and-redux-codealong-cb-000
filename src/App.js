@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+// implement APP component
+import React from 'react';
+import Counter from './components/Counter';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App" >
-        Counter Component here.
-      </div>
-    );
-  }
+const App = (props) => {
+  return (
+    <div className="App" >
+      <Counter store={ props.store } />
+    </div>
+  );
 }
-
 export default App;
